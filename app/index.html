@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,26 @@
 <body>
   <header>
     <div class="wrapper">
-      <div class="header__top">
+      <div class="header__top clearfix">
+        <a href="#" class="header__top__logo"><span>Tranzit</span> Hotels</a>
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">О нас</a></li>
+            <li class="nav__item"><a href="#">Статьи</a></li>
+            <li class="nav__item"><a href="#">Новости</a></li>
+            <li class="nav__item nav__item-active">
+              <a href="#">Города</a>
+              <ul class="sub__menu">
+                <li>Херсон</li>
+                <li>Ивано-Франковск</li>
+                <li>Одесса</li>
+              </ul>
+            </li>
+            <li class="nav__item"><a href="#">Для прессы</a></li>
+            <li class="nav__item"><a href="#">Партнеры</a></li>
+          </ul>
+        </nav>
+        <p class="header__top__phone">(093) 123 45 67</p>
       </div>
       <div class="header__middle">
         <h1>Больший комфорт за меньшие деньги</h1>
@@ -25,11 +44,19 @@
           <a href="#" class="btn btn-search">Найти</a>
         </div>
       </div>
-      <div id="scroll">
-       
+      <div id="scroll"></div>
+      <a href="#form" class="phone"></a>     
+      <div class="popup">
+        <form id="form">
+          <p>Обратная связь</p>
+          <input type="text" name="name" placeholder="Имя"><br>
+          <input type="text" name="email" placeholder="Email"><br>
+          <input type="text" name="phone" placeholder="Телефон*"><br>
+          <button class="btn btn-popup">Отправить</button>
+        </form>
       </div>
     </div>
-  </header>
+  </header>  
 
   <div class="srp">
     <h2>Some Recent Projects</h2>
@@ -124,7 +151,7 @@
   <footer>
     <p>©2017 All Rights Reserved</p>
   </footer>
-
+    
   <script src="js/libs.min.js"></script>
   <script src="js/common.js"></script>
 </body>

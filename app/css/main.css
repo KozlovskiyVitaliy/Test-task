@@ -27,7 +27,64 @@ header {
 
 .header__top {
   background: rgba(255, 255, 255, 0.3);
-  height: 80px; }
+  padding: 0 200px; }
+  .header__top a {
+    font-family: "Umedium", sans-serif;
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    display: block; }
+    .header__top a span {
+      color: #374c91; }
+
+.header__top__logo {
+  margin: 27px 110px 27px 0; }
+
+.nav {
+  float: left; }
+
+.nav__item {
+  float: left; }
+  .nav__item a {
+    color: #fff;
+    text-align: center;
+    padding: 31px 22px;
+    text-decoration: none;
+    font-family: Uregular;
+    font-size: 18px; }
+    .nav__item a:hover {
+      background: rgba(0, 0, 0, 0.3);
+      text-decoration: underline; }
+
+.nav__item-active {
+  background: url("../img/downsmall.png") no-repeat 85px 39px;
+  position: relative; }
+
+.bgc {
+  background: rgba(0, 0, 0, 0.3); }
+
+.sub__menu {
+  position: absolute;
+  color: #fff;
+  width: 207px;
+  background: rgba(0, 0, 0, 0.2);
+  top: 100%;
+  font-size: 18px;
+  display: none; }
+  .sub__menu li {
+    display: block;
+    margin: 17px 16px;
+    cursor: pointer; }
+    .sub__menu li:hover {
+      text-decoration: underline; }
+
+.header__top__phone {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 34px;
+  margin-left: 170px;
+  float: left; }
 
 .header__middle {
   text-align: center; }
@@ -86,6 +143,51 @@ header {
   bottom: 30px;
   left: -webkit-calc(50% - 16px);
   left: calc(50% - 16px);
+  cursor: pointer; }
+
+.phone {
+  width: 60px;
+  height: 60px;
+  background: url("../img/phone-icon.png") no-repeat center center #374c91;
+  position: absolute;
+  right: 60px;
+  bottom: 60px; }
+  .phone:hover {
+    opacity: 0.8; }
+
+.popup {
+  display: none; }
+
+form {
+  padding: 30px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 308px;
+  position: relative; }
+  form p {
+    color: #fffefe;
+    font-size: 22px;
+    width: 170px;
+    margin: 10px auto 15px; }
+  form input {
+    background: transparent;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none; }
+    form input:focus {
+      border-bottom: 1px solid #fff; }
+
+.btn-popup {
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  width: 250px;
+  height: 56px;
+  font-size: 20px;
   cursor: pointer; }
 
 .srp {
